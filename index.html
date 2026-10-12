@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Whoami - Delisha Ashruf</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- Navigatie bovenaan de pagina -->
+    <header>
+        <div class="container">
+            <nav aria-label="Hoofdnavigatie">
+                <ul>
+                    <li>
+                        <a href="index.html" class="active" aria-current="page">
+                            whoami
+                        </a>
+                    </li>
+                    <li><a href="projecten.html">Projecten</a></li>
+                    <li><a href="blog.html">Blog</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container page">
+        <!-- Introductie -->
+        <section class="hero">
+            <div class="hero-text">
+                <div class="label">— whoami</div>
+
+                <h1>
+                    Delisha<br>
+                    <span style="color: #6b6b6b;">Ashruf</span>
+                </h1>
+
+                <p class="intro">
+                    HBO ICT student die momenteel in haar tweede jaar zit.
+                    Ik bouw webapplicaties die snel, toegankelijk en
+                    aangenaam in gebruik zijn — van de database tot de pixel.
+                </p>
+
+                <div class="buttons">
+                    <a class="button primary" href="projecten.html">
+                        Projecten bekijken →
+                    </a>
+
+                    <a class="button" href="mailto:delishaashruf@gmail.com">
+                        Contact opnemen
+                    </a>
+                </div>
+            </div>
+
+            <!-- De alt-tekst beschrijft de portretfoto voor schermlezers -->
+            <img
+                src="delisha.JPG"
+                alt="Portretfoto van Delisha Ashruf"
+                title="Delisha Ashruf, HBO-ICT student"
+                class="photo"
+            >
+        </section>
+
+        <!-- Informatie over mij -->
+        <section class="section">
+            <div class="section-grid">
+                <h2 class="section-title">Over mij</h2>
+
+                <div>
+                    <p>
+                        Ik studeer al 4 jaar ICT en ben gefascineerd door het
+                        snijvlak van techniek en ontwerp. Mijn code is leesbaar
+                        en mijn interfaces zijn snel — niet toevallig, maar
+                        door bewuste keuzes.
+                    </p>
+
+                    <p>
+                        Naast mijn dagelijkse werk en studie draag ik bij aan
+                        open source projecten en schrijf ik over front-end architectuur.
+                    </p>
+
+                    <p>
+                        Buiten het scherm: Klantenservice, fysiek bezig zijn en bewegen.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Vaardigheden -->
+        <section class="section">
+            <div class="section-grid">
+                <h2 class="section-title">Vaardigheden</h2>
+
+                <div class="skills">
+                    <div>
+                        <h3>Frontend</h3>
+                        <ul>
+                            <li>HTML</li>
+                            <li>JavaScript</li>
+                            <li>CSS</li>
+                        </ul>
+                    </div>
+
+                    <div>
+                        <h3>Backend</h3>
+                        <ul>
+                            <li>C++</li>
+                            <li>Java</li>
+                            <li>Python</li>
+                            <li>SQL</li>
+                            <li>Object-Oriented Programming</li>
+                        </ul>
+                    </div>
+
+                    <div>
+                        <h3>DevOps</h3>
+                        <ul>
+                            <li>GitHub Actions</li>
+                            <li>Linux</li>
+                            <li>Bash / Shell Scripting</li>
+                            <li>Security Essentials</li>
+                            <li>Shellcode</li>
+                        </ul>
+                    </div>
+
+                    <div>
+                        <h3>Tools</h3>
+                        <ul>
+                            <li>Git / GitHub</li>
+                            <li>IntelliJ IDEA</li>
+                            <li>Visual Studio Code</li>
+                            <li>Sublime Text</li>
+                            <li>MySQL workbench</li>
+                            <li>Figma</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Opleiding en werkervaring -->
+        <section class="section">
+            <div class="section-grid">
+                <h2 class="section-title">Tijdlijn</h2>
+
+                <ol class="timeline">
+                    <li>
+                        <span class="year">2023-2026</span>
+                        <div>
+                            <strong>Klantenservice/ Backoffice Medewerker</strong>
+                            <br>
+                            <span style="color: #6b6b6b;">IKEA</span>
+                        </div>
+                    </li>
+
+                    <li>
+                        <span class="year">2025-2026</span>
+                        <div>
+                            <strong>HBO ICT</strong>
+                            <br>
+                            <span style="color: #6b6b6b;">Haagse Hogeschool</span>
+                        </div>
+                    </li>
+
+                    <li>
+                        <span class="year">2024-2025</span>
+                        <div>
+                            <strong>BSc Data science &amp; AI</strong>
+                            <br>
+                            <span style="color: #6b6b6b;">Universiteit Leiden</span>
+                        </div>
+                    </li>
+
+                    <li>
+                        <span class="year">2023-2024</span>
+                        <div>
+                            <strong>BSc Informatica</strong>
+                            <br>
+                            <span style="color: #6b6b6b;">Universiteit Leiden</span>
+                        </div>
+                    </li>
+                </ol>
+            </div>
+        </section>
+
+        <!-- Quote die met JavaScript uit een API wordt opgehaald -->
+        <section class="opdracht2-section" id="programmeerquote">
+            <span class="category">API</span>
+            <h2>Een programmeerquote</h2>
+
+            <p>
+                Ik gebruik hier een openbare API om dynamisch
+                een programmeerquote op te halen.
+            </p>
+
+            <div
+                class="quote-status"
+                id="quote-status"
+                aria-live="polite"
+            >
+                Quote wordt geladen...
+            </div>
+
+            <blockquote
+                class="quote-content"
+                id="quote-content"
+            ></blockquote>
+
+            <p class="quote-author" id="quote-author"></p>
+
+            <button class="button primary" id="new-quote" type="button">
+                Nieuwe quote
+            </button>
+        </section>
+
+        <!-- Contactformulier -->
+        <section class="opdracht2-section" id="contact">
+            <span class="category">CONTACT</span>
+            <h2>Neem contact op</h2>
+
+            <p>
+                Heb je een vraag of wil je contact opnemen?
+                Vul dan het formulier hieronder in.
+            </p>
+
+            <form class="contact-form" id="contact-form" novalidate>
+                <div class="form-field">
+                    <label for="naam">Naam</label>
+
+                    <input
+                        type="text"
+                        id="naam"
+                        name="naam"
+                        autocomplete="name"
+                        aria-describedby="naam-error"
+                        aria-invalid="false"
+                    >
+
+                    <p
+                        class="field-error"
+                        id="naam-error"
+                        aria-live="polite"
+                    ></p>
+                </div>
+
+                <div class="form-field">
+                    <label for="email">E-mailadres</label>
+
+                    <input
+                        type="email"
+                        id="email"
+                        name="email"
+                        autocomplete="email"
+                        aria-describedby="email-error"
+                        aria-invalid="false"
+                    >
+
+                    <p
+                        class="field-error"
+                        id="email-error"
+                        aria-live="polite"
+                    ></p>
+                </div>
+
+                <div class="form-field">
+                    <label for="bericht">Bericht</label>
+
+                    <textarea
+                        id="bericht"
+                        name="bericht"
+                        rows="6"
+                        aria-describedby="bericht-error"
+                        aria-invalid="false"
+                    ></textarea>
+
+                    <p
+                        class="field-error"
+                        id="bericht-error"
+                        aria-live="polite"
+                    ></p>
+                </div>
+
+                <button class="button primary" type="submit">
+                    Versturen
+                </button>
+
+                <p
+                    class="form-success"
+                    id="form-success"
+                    aria-live="polite"
+                ></p>
+            </form>
+        </section>
+    </main>
+
+    <!-- Voettekst met contact- en profielkoppelingen -->
+    <footer>
+        <div class="container footer-content">
+            <p>© 2026 Delisha Ashruf — Mijn portfolio</p>
+
+            <div class="links">
+                <a
+                    href="https://github.com/delisha11"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                >
+                    GitHub
+                </a>
+
+                <a
+                    href="https://linkedin.com"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                >
+                    LinkedIn
+                </a>
+
+                <a href="mailto:delishaashruf@gmail.com">
+                    delishaashruf@gmail.com
+                </a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- defer zorgt dat JavaScript wordt uitgevoerd nadat HTML is ingelezen -->
+    <script src="script.js" defer></script>
+</body>
+</html>
