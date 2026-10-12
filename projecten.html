@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projecten - Delisha Ashruf</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <nav aria-label="Hoofdnavigatie">
+                <ul>
+                    <li><a href="index.html">whoami</a></li>
+
+                    <li>
+                        <a
+                            href="projecten.html"
+                            class="active"
+                            aria-current="page"
+                        >
+                            Projecten
+                        </a>
+                    </li>
+
+                    <li><a href="blog.html">Blog</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container page">
+        <div class="label">— Projecten</div>
+        <h1>Wat ik heb gemaakt</h1>
+
+        <p class="intro">
+            Een overzicht van opdrachten en projecten die ik tijdens mijn opleiding
+            heb gemaakt. Hier laat ik zien wat ik heb geleerd met C++ en Java.
+        </p>
+
+        <!-- De data-filter-waarden worden door JavaScript gebruikt -->
+        <div class="filters" id="project-controls">
+            <button class="filter active" data-filter="all" type="button">
+                Alles
+            </button>
+
+            <button class="filter" data-filter="cpp" type="button">
+                C++
+            </button>
+
+            <button class="filter" data-filter="java" type="button">
+                Java
+            </button>
+
+            <label class="sort-label" for="project-sort">
+                Sorteren:
+            </label>
+
+            <select class="sort-select" id="project-sort">
+                <option value="default">Standaard</option>
+                <option value="az">Naam A-Z</option>
+                <option value="za">Naam Z-A</option>
+            </select>
+        </div>
+
+        <!-- Schermlezers krijgen ook bericht over het aantal projecten -->
+        <p class="project-count" id="project-count" aria-live="polite"></p>
+
+        <!-- JavaScript plaatst de projectkaarten in dit element -->
+        <section
+            class="project-grid"
+            id="project-grid"
+            aria-label="Overzicht van projecten"
+        ></section>
+    </main>
+
+    <footer>
+        <div class="container footer-content">
+            <p>© 2026 Delisha Ashruf — Mijn portfolio</p>
+
+            <div class="links">
+                <a
+                    href="https://github.com/delisha11"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                >
+                    GitHub
+                </a>
+
+                <a
+                    href="https://linkedin.com"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                >
+                    LinkedIn
+                </a>
+
+                <a href="mailto:delishaashruf@gmail.com">
+                    delishaashruf@gmail.com
+                </a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js" defer></script>
+</body>
+</html>
